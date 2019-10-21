@@ -79,12 +79,12 @@ public class BottomDialog {
         final Dialog bottomDialog = new Dialog(builder.context, R.style.BottomDialogs);
         View view = LayoutInflater.from(builder.context).inflate(R.layout.library_bottom_dialog, null);
 
-        vIcon = (ImageView) view.findViewById(R.id.bottomDialog_icon);
-        vTitle = (TextView) view.findViewById(R.id.bottomDialog_title);
-        vContent = (TextView) view.findViewById(R.id.bottomDialog_content);
-        vCustomView = (FrameLayout) view.findViewById(R.id.bottomDialog_custom_view);
-        vNegative = (Button) view.findViewById(R.id.bottomDialog_cancel);
-        vPositive = (Button) view.findViewById(R.id.bottomDialog_ok);
+        vIcon = view.findViewById(R.id.bottomDialog_icon);
+        vTitle = view.findViewById(R.id.bottomDialog_title);
+        vContent = view.findViewById(R.id.bottomDialog_content);
+        vCustomView = view.findViewById(R.id.bottomDialog_custom_view);
+        vNegative = view.findViewById(R.id.bottomDialog_cancel);
+        vPositive = view.findViewById(R.id.bottomDialog_ok);
 
         if (builder.icon != null) {
             vIcon.setVisibility(View.VISIBLE);
@@ -131,12 +131,8 @@ public class BottomDialog {
 
             Drawable buttonBackground = UtilsLibrary.createButtonBackgroundDrawable(builder.context, builder.btn_colorPositiveBackground);
 
-            if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN) {
-                vPositive.setBackground(buttonBackground);
-            } else {
-                // noinspection deprecation
-                vPositive.setBackgroundDrawable(buttonBackground);
-            }
+            vPositive.setBackground(buttonBackground);
+
         }
 
         if (builder.btn_negative != null) {

@@ -1,13 +1,11 @@
 package com.github.javiersantos.bottomdialogs;
 
-import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.res.ColorStateList;
 import android.graphics.Color;
 import android.graphics.drawable.Drawable;
 import android.graphics.drawable.GradientDrawable;
 import android.graphics.drawable.RippleDrawable;
-import android.os.Build;
 import android.util.TypedValue;
 
 import androidx.annotation.NonNull;
@@ -27,7 +25,6 @@ public class UtilsLibrary {
         return createButtonBackgroundDrawableLollipop(fillColor, rippleColor, buttonCornerRadius);
     }
 
-    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     private static Drawable createButtonBackgroundDrawableLollipop(int fillColor, int rippleColor,int cornerRadius) {
         Drawable d = createButtonBackgroundDrawableBase(fillColor, cornerRadius);
         return new RippleDrawable(ColorStateList.valueOf(rippleColor), d, null);
