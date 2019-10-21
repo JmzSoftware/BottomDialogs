@@ -14,5 +14,4 @@
         <item name="android:windowExitAnimation">@anim/sheet_hide</item>
     </style>
 
-
 </resources>
