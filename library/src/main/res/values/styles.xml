@@ -26,4 +26,8 @@
         <item name="android:layout_marginRight">@dimen/btn_margin</item>
         <item name="backgroundTint">?attr/colorPrimaryDark</item>
     </style>
+
+    <style name="CancelButton" parent="Button.Base">
+        <item name="backgroundTint">?attr/colorError</item>
+    </style>
 </resources>
