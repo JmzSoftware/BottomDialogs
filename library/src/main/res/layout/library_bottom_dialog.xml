@@ -81,7 +81,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@android:string/cancel"
-                android:theme="@style/Button.Base"/>
+                android:theme="@style/CancelButton"/>
             <Button
                 android:id="@+id/bottomDialog_ok"
                 android:visibility="gone"
