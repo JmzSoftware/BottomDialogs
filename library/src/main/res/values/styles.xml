@@ -24,5 +24,6 @@
         <item name="android:gravity">center</item>
         <item name="android:layout_marginLeft">@dimen/btn_margin</item>
         <item name="android:layout_marginRight">@dimen/btn_margin</item>
+        <item name="backgroundTint">?attr/colorPrimaryDark</item>
     </style>
 </resources>
