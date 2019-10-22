@@ -14,4 +14,15 @@
         <item name="android:windowExitAnimation">@anim/sheet_hide</item>
     </style>
 
+    <style name="Button.Base" parent="Widget.MaterialComponents.Button.TextButton.Dialog">
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textSize">13sp</item>
+        <item name="android:minHeight">@dimen/btn_min_height</item>
+        <item name="android:minWidth">@dimen/btn_min_width</item>
+        <item name="android:focusable">true</item>
+        <item name="android:clickable">true</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">@dimen/btn_margin</item>
+        <item name="android:layout_marginRight">@dimen/btn_margin</item>
+    </style>
 </resources>
